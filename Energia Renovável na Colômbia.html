@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energia Renovável na Colômbia: Um Futuro Sustentável</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        colombiaYellow: '#FFCD00',
+                        colombiaBlue: '#003893',
+                        colombiaRed: '#CE1126',
+                        natureGreen: '#059669',
+                        natureDark: '#064E3B'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        .hero-colombia {
+            background: linear-gradient(135deg, rgba(0, 56, 147, 0.95), rgba(206, 17, 38, 0.85)), url('https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 30px -5px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Gradientes vivos e totalmente coloridos inspirados na bandeira da Colômbia */
+        .bg-colombia-vibrant-1 {
+            background: linear-gradient(180deg, #FFEF5C 0%, #38BDF8 50%, #34D399 100%);
+        }
+        .bg-colombia-vibrant-2 {
+            background: linear-gradient(180deg, #38BDF8 0%, #818CF8 50%, #FBBF24 100%);
+        }
+        .bg-colombia-vibrant-3 {
+            background: linear-gradient(180deg, #FBBF24 0%, #34D399 50%, #60A5FA 100%);
+        }
+        .bg-colombia-vibrant-4 {
+            background: linear-gradient(180deg, #34D399 0%, #F43F5E 50%, #FFEF5C 100%);
+        }
+    </style>
+</head>
+<body class="bg-colombia-vibrant-1 text-gray-900 font-sans antialiased selection:bg-colombiaYellow selection:text-colombiaBlue">
+
+    <!-- Faixa Superior da Bandeira da Colômbia -->
+    <div class="h-3 w-full grid grid-cols-3 shadow-md">
+        <div class="bg-colombiaYellow"></div>
+        <div class="bg-colombiaBlue"></div>
+        <div class="bg-colombiaRed"></div>
+    </div>
+
+    <!-- Barra de Navegação -->
+    <header class="sticky top-0 z-50 bg-colombiaBlue/95 backdrop-blur-md shadow-lg border-b border-yellow-400/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="h-10 w-2.5 bg-colombiaYellow rounded-full shadow"></div>
+                <div class="h-10 w-2.5 bg-white rounded-full shadow"></div>
+                <div class="h-10 w-2.5 bg-colombiaRed rounded-full shadow"></div>
+                <span class="font-extrabold text-xl sm:text-2xl text-white tracking-tight">Eco<span class="text-colombiaYellow">Colômbia</span></span>
+            </div>
+            <nav class="hidden md:flex space-x-8 font-semibold text-sm lg:text-base text-yellow-100">
+                <a href="#inicio" class="hover:text-colombiaYellow transition">Início</a>
+                <a href="#fontes" class="hover:text-colombiaYellow transition">Fontes</a>
+                <a href="#interativo" class="hover:text-colombiaYellow transition">Área Interativa</a>
+                <a href="#curiosidades" class="hover:text-colombiaYellow transition">Curiosidades</a>
+                <a href="#conclusao" class="hover:text-colombiaYellow transition">Conclusão</a>
+            </nav>
+            <button id="menu-btn" class="md:hidden text-colombiaYellow focus:outline-none text-2xl p-2">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="hidden md:hidden bg-blue-950 border-t border-yellow-400/30 px-4 pt-3 pb-5 space-y-3 shadow-2xl text-white">
+            <a href="#inicio" class="block py-2 font-medium hover:text-colombiaYellow px-2 rounded">Início</a>
+            <a href="#fontes" class="block py-2 font-medium hover:text-colombiaYellow px-2 rounded">Fontes</a>
+            <a href="#interativo" class="block py-2 font-medium hover:text-colombiaYellow px-2 rounded">Área Interativa</a>
+            <a href="#curiosidades" class="block py-2 font-medium hover:text-colombiaYellow px-2 rounded">Curiosidades</a>
+            <a href="#conclusao" class="block py-2 font-medium hover:text-colombiaYellow px-2 rounded">Conclusão</a>
+        </div>
+    </header>
+
+    <!-- Seção de Abertura (Hero) -->
+    <section id="inicio" class="hero-colombia text-white py-24 sm:py-36 relative overflow-hidden flex items-center shadow-2xl">
+        <div class="absolute inset-0 bg-gradient-to-r from-colombiaBlue/80 via-blue-900/60 to-colombiaRed/70"></div>
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <div class="inline-flex items-center gap-2 bg-colombiaYellow text-colombiaBlue px-5 py-2 rounded-full text-sm font-extrabold mb-6 shadow-xl border-2 border-yellow-300">
+                <i class="fa-solid fa-sun text-colombiaRed"></i> Sustentabilidade e Energia Limpa
+            </div>
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 leading-tight drop-shadow-lg text-yellow-200">
+                Energia Renovável na Colômbia: <span class="text-white underline decoration-colombiaYellow decoration-4">Um Futuro Sustentável</span>
+            </h1>
+            <p class="text-base sm:text-xl text-gray-100 max-w-3xl mx-auto mb-10 leading-relaxed font-medium drop-shadow">
+                A Colômbia possui uma geografia privilegiada rica em recursos naturais. Descubra como o país aproveita a força da água, a luz do sol, a intensidade dos ventos e a matéria orgânica para produzir energia limpa.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#fontes" class="bg-colombiaYellow text-colombiaBlue font-extrabold px-8 py-4 rounded-xl shadow-2xl hover:bg-yellow-300 transition transform hover:-scale-105 text-center flex items-center justify-center gap-2 border-2 border-yellow-200">
+                    Explorar as energias <i class="fa-solid fa-arrow-down"></i>
+                </a>
+                <a href="#interativo" class="bg-colombiaBlue text-white border-2 border-colombiaYellow font-bold px-8 py-4 rounded-xl shadow-2xl hover:bg-blue-900 transition text-center flex items-center justify-center gap-2">
+                    Ir para o Quiz <i class="fa-solid fa-gamepad text-colombiaYellow"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Principais Fontes de Energia Renovável -->
+    <section id="fontes" class="py-20 bg-colombia-vibrant-2 border-t-4 border-colombiaYellow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="inline-block bg-colombiaBlue text-colombiaYellow text-xs font-extrabold uppercase tracking-widest px-4 py-1.5 rounded-full mb-3 shadow-lg border border-blue-400">Matriz Energética</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-blue-950 mt-2 mb-4 drop-shadow">Principais Fontes de Energia Renovável</h2>
+                <p class="text-blue-900 text-base sm:text-lg font-bold">Conheça as tecnologias e recursos que tornam a Colômbia referência em transição energética na América Latina.</p>
+            </div>
+
+            <!-- Grid de Cartões -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Cartão 1: Hidrelétrica -->
+                <div class="bg-blue-900/90 backdrop-blur-md rounded-3xl overflow-hidden shadow-2xl card-hover border-t-8 border-colombiaYellow text-white flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80" alt="Usina Hidrelétrica" class="w-full h-full object-cover transform hover:scale-105 transition duration-500">
+                            <div class="absolute top-4 left-4 bg-colombiaYellow text-colombiaBlue font-extrabold text-xs px-3.5 py-1.5 rounded-full flex items-center gap-1 shadow-lg">
+                                <i class="fa-solid fa-water"></i> Principal Base
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-extrabold text-colombiaYellow mb-3">Energia Hidrelétrica</h3>
+                            <p class="text-gray-100 text-sm sm:text-base leading-relaxed mb-4">
+                                A força da água dos rios caudalosos da Colômbia movimenta turbinas em grandes usinas para gerar eletricidade limpa. Representa a espinha dorsal da matriz elétrica do país há décadas.
+                            </p>
+                            <!-- Conteúdo expansível -->
+                            <div id="content-hidro" class="hidden text-yellow-100 text-sm space-y-2 border-t border-blue-700 pt-4 mt-2">
+                                <p><strong>Como funciona:</strong> O represamento ou fluxo natural de rios acionados pela topografia andina faz girar turbinas conectadas a geradores elétricos.</p>
+                                <p><strong>Importância:</strong> Conforme dados da operadora <span class="font-bold text-colombiaYellow">XM</span>, mais de 70% da energia gerada no país provém de fontes hidráulicas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button onclick="toggleExpand('hidro')" id="btn-hidro" class="w-full py-3 px-4 bg-colombiaYellow text-colombiaBlue font-extrabold rounded-xl hover:bg-yellow-300 transition flex items-center justify-center gap-2 text-sm shadow-xl">
+                            <span>Saiba mais</span> <i class="fa-solid fa-chevron-down text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Cartão 2: Solar -->
+                <div class="bg-amber-950/90 backdrop-blur-md rounded-3xl overflow-hidden shadow-2xl card-hover border-t-8 border-colombiaYellow text-white flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1509391365360-e882f5585d55?auto=format&fit=crop&w=800&q=80" alt="Energia Solar" class="w-full h-full object-cover transform hover:scale-105 transition duration-500">
+                            <div class="absolute top-4 left-4 bg-colombiaYellow text-colombiaBlue font-extrabold text-xs px-3.5 py-1.5 rounded-full flex items-center gap-1 shadow-lg">
+                                <i class="fa-solid fa-sun"></i> Alta Irradiação
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-extrabold text-colombiaYellow mb-3">Energia Solar</h3>
+                            <p class="text-gray-100 text-sm sm:text-base leading-relaxed mb-4">
+                                O aproveitamento da luz solar através de painéis fotovoltaicos para gerar eletricidade vem crescendo aceleradamente, destacando o enorme potencial de regiões ensolaradas.
+                            </p>
+                            <!-- Conteúdo expansível -->
+                            <div id="content-solar" class="hidden text-yellow-100 text-sm space-y-2 border-t border-amber-800 pt-4 mt-2">
+                                <p><strong>Como funciona:</strong> Células fotovoltaicas absorvem fótons da luz solar e geram corrente elétrica contínua.</p>
+                                <p><strong>Destaque regional:</strong> Departamentos como <span class="font-bold text-colombiaYellow">La Guajira</span> possuem radiação solar superior à média global, impulsionados pela <span class="font-bold text-colombiaYellow">UPME</span>.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button onclick="toggleExpand('solar')" id="btn-solar" class="w-full py-3 px-4 bg-colombiaYellow text-colombiaBlue font-extrabold rounded-xl hover:bg-yellow-300 transition flex items-center justify-center gap-2 text-sm shadow-xl">
+                            <span>Saiba mais</span> <i class="fa-solid fa-chevron-down text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Cartão 3: Eólica -->
+                <div class="bg-emerald-950/90 backdrop-blur-md rounded-3xl overflow-hidden shadow-2xl card-hover border-t-8 border-colombiaYellow text-white flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=800&q=80" alt="Energia Eólica" class="w-full h-full object-cover transform hover:scale-105 transition duration-500">
+                            <div class="absolute top-4 left-4 bg-colombiaYellow text-colombiaBlue font-extrabold text-xs px-3.5 py-1.5 rounded-full flex items-center gap-1 shadow-lg">
+                                <i class="fa-solid fa-wind"></i> Ventos Fortes
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-extrabold text-colombiaYellow mb-3">Energia Eólica</h3>
+                            <p class="text-gray-100 text-sm sm:text-base leading-relaxed mb-4">
+                                Utiliza a força dos ventos constantes para movimentar grandes pás de turbinas, gerando energia limpa e inesgotável em áreas de planícies e penínsulas abertas.
+                            </p>
+                            <!-- Conteúdo expansível -->
+                            <div id="content-eolica" class="hidden text-yellow-100 text-sm space-y-2 border-t border-emerald-800 pt-4 mt-2">
+                                <p><strong>Como funciona:</strong> A energia cinética do vento faz girar o rotor da turbina conectada a um gerador elétrico.</p>
+                                <p><strong>Potencial:</strong> Novamente, <span class="font-bold text-colombiaYellow">La Guajira</span> destaca-se com velocidades de vento que dobram a média mundial.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button onclick="toggleExpand('eolica')" id="btn-eolica" class="w-full py-3 px-4 bg-colombiaYellow text-colombiaBlue font-extrabold rounded-xl hover:bg-yellow-300 transition flex items-center justify-center gap-2 text-sm shadow-xl">
+                            <span>Saiba mais</span> <i class="fa-solid fa-chevron-down text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Cartão 4: Biomassa -->
+                <div class="bg-rose-950/90 backdrop-blur-md rounded-3xl overflow-hidden shadow-2xl card-hover border-t-8 border-colombiaYellow text-white flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?auto=format&fit=crop&w=800&q=80" alt="Biomassa" class="w-full h-full object-cover transform hover:scale-105 transition duration-500">
+                            <div class="absolute top-4 left-4 bg-colombiaYellow text-colombiaBlue font-extrabold text-xs px-3.5 py-1.5 rounded-full flex items-center gap-1 shadow-lg">
+                                <i class="fa-solid fa-seedling"></i> Circular
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-extrabold text-colombiaYellow mb-3">Biomassa</h3>
+                            <p class="text-gray-100 text-sm sm:text-base leading-relaxed mb-4">
+                                Aproveitamento de materiais orgânicos, resíduos agrícolas e subprodutos industriais (como bagaço de cana e casca de palma) para produção de energia.
+                            </p>
+                            <!-- Conteúdo expansível -->
+                            <div id="content-biomassa" class="hidden text-yellow-100 text-sm space-y-2 border-t border-rose-800 pt-4 mt-2">
+                                <p><strong>Como funciona:</strong> A biomassa é queimada ou convertida em biogás para gerar eletricidade e calor.</p>
+                                <p><strong>Setor Agroindustrial:</strong> A Colômbia aproveita resíduos da cana e do óleo de palma para cogeração nas próprias indústrias.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button onclick="toggleExpand('biomassa')" id="btn-biomassa" class="w-full py-3 px-4 bg-colombiaYellow text-colombiaBlue font-extrabold rounded-xl hover:bg-yellow-300 transition flex items-center justify-center gap-2 text-sm shadow-xl">
+                            <span>Saiba mais</span> <i class="fa-solid fa-chevron-down text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Área Interativa -->
+    <section id="interativo" class="py-20 bg-colombia-vibrant-3 border-t-4 border-colombiaBlue">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="inline-block bg-colombiaBlue text-colombiaYellow text-xs font-extrabold uppercase tracking-widest px-4 py-1.5 rounded-full mb-3 shadow-lg border border-blue-400">Aprenda Brincando</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-blue-950 mt-2 mb-4 drop-shadow">Área Interativa</h2>
+                <p class="text-blue-950 text-base sm:text-lg font-bold">Teste seus conhecimentos com nosso quiz educativo e descubra de forma prática como cada recurso gera energia.</p>
+            </div>
+
+            <!-- Seção 1: Descubra a fonte de energia (Simulador) -->
+            <div class="bg-blue-900/90 backdrop-blur-md rounded-3xl p-6 sm:p-10 mb-16 border-4 border-colombiaYellow shadow-2xl text-white">
+                <h3 class="text-2xl font-extrabold text-colombiaYellow mb-4 text-center flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-bolt text-colombiaYellow animate-pulse"></i> Descubra a fonte de energia
+                </h3>
+                <p class="text-gray-100 text-center max-w-2xl mx-auto mb-8 text-sm sm:text-base font-medium">
+                    Clique em um dos recursos naturais abaixo para ver como ele se transforma em energia limpa na Colômbia:
+                </p>
+                
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+                    <button onclick="selectSource('agua')" id="src-btn-agua" class="p-4 bg-blue-950 border-2 border-colombiaYellow rounded-2xl font-extrabold text-white hover:bg-colombiaYellow hover:text-colombiaBlue transition flex flex-col items-center gap-2 shadow-xl">
+                        <i class="fa-solid fa-water text-3xl text-colombiaYellow"></i> Água
+                    </button>
+                    <button onclick="selectSource('sol')" id="src-btn-sol" class="p-4 bg-blue-950 border-2 border-colombiaYellow rounded-2xl font-extrabold text-white hover:bg-colombiaYellow hover:text-colombiaBlue transition flex flex-col items-center gap-2 shadow-xl">
+                        <i class="fa-solid fa-sun text-3xl text-yellow-400"></i> Sol
+                    </button>
+                    <button onclick="selectSource('vento')" id="src-btn-vento" class="p-4 bg-blue-950 border-2 border-colombiaYellow rounded-2xl font-extrabold text-white hover:bg-colombiaYellow hover:text-colombiaBlue transition flex flex-col items-center gap-2 shadow-xl">
+                        <i class="fa-solid fa-wind text-3xl text-emerald-400"></i> Vento
+                    </button>
+                    <button onclick="selectSource('materia')" id="src-btn-materia" class="p-4 bg-blue-950 border-2 border-colombiaYellow rounded-2xl font-extrabold text-white hover:bg-colombiaYellow hover:text-colombiaBlue transition flex flex-col items-center gap-2 shadow-xl">
+                        <i class="fa-solid fa-seedling text-3xl text-rose-400"></i> Matéria Orgânica
+                    </button>
+                </div>
+
+                <!-- Painel de Exibição do Recurso -->
+                <div id="source-display-box" class="bg-blue-950 p-6 sm:p-8 rounded-2xl border-2 border-yellow-400/50 shadow-inner">
+                    <p class="text-gray-300 text-center italic">Selecione uma das opções acima para exibir a explicação detalhada.</p>
+                </div>
+            </div>
+
+            <!-- Seção 2: Quiz Educativo -->
+            <div class="bg-gradient-to-br from-blue-950 via-indigo-950 to-blue-900 rounded-3xl p-6 sm:p-10 text-white shadow-2xl border-4 border-colombiaYellow">
+                <div class="max-w-3xl mx-auto">
+                    <div class="flex items-center justify-between mb-8 pb-4 border-b border-white/20">
+                        <div>
+                            <span class="text-colombiaYellow text-xs font-extrabold uppercase tracking-wider">Desafio Sustentável</span>
+                            <h3 class="text-2xl font-extrabold text-yellow-200">Quiz: Energias Renováveis na Colômbia</h3>
+                        </div>
+                        <div id="quiz-progress" class="bg-colombiaYellow text-colombiaBlue font-extrabold px-4 py-2 rounded-full text-sm shadow-lg">
+                            Pergunta <span id="current-q">1</span> de 5
+                        </div>
+                    </div>
+
+                    <!-- Container da Pergunta -->
+                    <div id="quiz-container">
+                        <h4 id="question-text" class="text-lg sm:text-xl font-bold mb-6 text-yellow-100">Carregando pergunta...</h4>
+                        <div id="options-container" class="space-y-3 mb-6">
+                            <!-- Opções injetadas via JS -->
+                        </div>
+                        <div id="feedback-box" class="hidden p-4 rounded-xl mb-6 text-sm sm:text-base font-medium"></div>
+                        <button id="next-btn" onclick="nextQuestion()" class="hidden w-full bg-colombiaYellow text-colombiaBlue font-extrabold py-3.5 rounded-xl hover:bg-yellow-300 transition shadow-xl border-2 border-yellow-200">
+                            Próxima Pergunta <i class="fa-solid fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+
+                    <!-- Container de Resultado Final -->
+                    <div id="quiz-results" class="hidden text-center py-6">
+                        <div class="inline-flex p-4 bg-colombiaYellow rounded-full text-colombiaBlue text-4xl mb-4 shadow-xl">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <h4 class="text-3xl font-extrabold mb-2 text-yellow-200">Quiz Concluído!</h4>
+                        <p id="score-text" class="text-xl mb-6 text-gray-100 font-medium"></p>
+                        <button onclick="restartQuiz()" class="bg-colombiaYellow text-colombiaBlue font-extrabold px-8 py-3.5 rounded-xl hover:bg-yellow-300 transition shadow-xl border-2 border-yellow-200">
+                            Tentar Novamente <i class="fa-solid fa-rotate-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Curiosidades -->
+    <section id="curiosidades" class="py-20 bg-colombia-vibrant-4 border-t-4 border-colombiaRed">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="inline-block bg-colombiaRed text-white text-xs font-extrabold uppercase tracking-widest px-4 py-1.5 rounded-full mb-3 shadow-lg border border-red-400">Você Sabia?</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-blue-950 mt-2 mb-4 drop-shadow">Curiosidades e Dados Oficiais</h2>
+                <p class="text-blue-950 text-base sm:text-lg font-bold">Fatos reais baseados em relatórios oficiais do setor energético colombiano.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Curiosidade 1 -->
+                <div class="bg-blue-900/90 backdrop-blur-md p-8 rounded-3xl shadow-2xl text-white flex flex-col justify-between border-t-8 border-colombiaYellow card-hover">
+                    <div>
+                        <div class="w-14 h-14 bg-colombiaYellow text-colombiaBlue rounded-2xl flex items-center justify-center font-extrabold text-2xl mb-6 shadow-lg">
+                            <i class="fa-solid fa-landmark"></i>
+                        </div>
+                        <h3 class="text-2xl font-extrabold text-colombiaYellow mb-3">Tradição Hidrelétrica</h3>
+                        <p class="text-gray-100 text-sm leading-relaxed mb-6 font-medium">
+                            Historicamente, a matriz elétrica da Colômbia é uma das mais limpas do mundo devido à abundância de rios andinos. Cerca de 70% a 80% da eletricidade do país é gerada por hidrelétricas.
+                        </p>
+                    </div>
+                    <div class="border-t border-blue-700 pt-4 text-xs text-yellow-300 font-extrabold">
+                        Fonte: Relatório XM / UPME
+                    </div>
+                </div>
+
+                <!-- Curiosidade 2 -->
+                <div class="bg-amber-950/90 backdrop-blur-md p-8 rounded-3xl shadow-2xl text-white flex flex-col justify-between border-t-8 border-colombiaYellow card-hover">
+                    <div>
+                        <div class="w-14 h-14 bg-colombiaYellow text-colombiaBlue rounded-2xl flex items-center justify-center font-extrabold text-2xl mb-6 shadow-lg">
+                            <i class="fa-solid fa-wind"></i>
+                        </div>
+                        <h3 class="text-2xl font-extrabold text-colombiaYellow mb-3">O Tesouro de La Guajira</h3>
+                        <p class="text-gray-100 text-sm leading-relaxed mb-6 font-medium">
+                            A península de La Guajira, no norte colombiano, possui ventos com velocidades médias que chegam a quase o dobro da média mundial, transformando a região na capital das energias limpas.
+                        </p>
+                    </div>
+                    <div class="border-t border-amber-800 pt-4 text-xs text-yellow-300 font-extrabold">
+                        Fonte: Ministério de Minas e Energia
+                    </div>
+                </div>
+
+                <!-- Curiosidade 3 -->
+                <div class="bg-emerald-950/90 backdrop-blur-md p-8 rounded-3xl shadow-2xl text-white flex flex-col justify-between border-t-8 border-colombiaYellow card-hover">
+                    <div>
+                        <div class="w-14 h-14 bg-colombiaYellow text-colombiaBlue rounded-2xl flex items-center justify-center font-extrabold text-2xl mb-6 shadow-lg">
+                            <i class="fa-solid fa-rocket"></i>
+                        </div>
+                        <h3 class="text-2xl font-extrabold text-colombiaYellow mb-3">Expansão Acelerada</h3>
+                        <p class="text-gray-100 text-sm leading-relaxed mb-6 font-medium">
+                            Nos últimos anos, a Colômbia saltou de menos de 50 MW para centenas de megawatts em projetos solares e eólicos em operação, impulsionada por leilões de transição energética.
+                        </p>
+                    </div>
+                    <div class="border-t border-emerald-800 pt-4 text-xs text-yellow-300 font-extrabold">
+                        Fonte: UPME (Unidade de Planejamento Minero Energético)
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusão -->
+    <section id="conclusao" class="py-20 bg-colombia-vibrant-1 border-t-4 border-colombiaBlue">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-r from-blue-950 via-colombiaBlue to-blue-900 rounded-3xl p-8 sm:p-12 text-white shadow-2xl relative overflow-hidden border-4 border-colombiaYellow">
+                <div class="absolute -right-10 -bottom-10 opacity-10 text-9xl">
+                    <i class="fa-solid fa-earth-americas text-colombiaYellow"></i>
+                </div>
+                <div class="relative z-10 max-w-3xl">
+                    <span class="bg-colombiaYellow text-colombiaBlue font-extrabold text-xs uppercase px-4 py-1.5 rounded-full inline-block mb-4 shadow-lg">Visão de Futuro</span>
+                    <h2 class="text-2xl sm:text-4xl font-extrabold mb-6 text-yellow-200">Por que Diversificar as Fontes Renováveis?</h2>
+                    <p class="text-gray-100 text-base sm:text-lg leading-relaxed mb-6 font-medium">
+                        Embora a Colômbia seja tradicionalmente forte em hidroeletricidade, depender de uma única fonte deixa o país vulnerável a eventos climáticos extremos, como períodos prolongados de seca causados pelo fenômeno El Niño.
+                    </p>
+                    <p class="text-gray-100 text-base sm:text-lg leading-relaxed font-medium">
+                        Diversificar com energia solar, eólica e biomassa fortalece a <span class="font-extrabold text-colombiaYellow">segurança energética</span> do país, protege os recursos naturais, diminui as emissões de gases de efeito estufa e garante um futuro próspero para as próximas gerações.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-blue-950 text-yellow-100 py-12 border-t-4 border-colombiaYellow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left">
+            <div class="flex items-center space-x-3">
+                <div class="h-8 w-2 bg-colombiaYellow rounded-full"></div>
+                <div class="h-8 w-2 bg-white rounded-full"></div>
+                <div class="h-8 w-2 bg-colombiaRed rounded-full"></div>
+                <span class="font-extrabold text-lg text-white">EcoColômbia</span>
+            </div>
+            <p class="text-sm font-medium">Trabalho Educativo sobre Energias Renováveis na Colômbia • Conteúdo em Português do Brasil</p>
+            <div class="flex space-x-4 text-xl">
+                <a href="#inicio" class="text-colombiaYellow hover:text-white transition"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+        </div>
+        <div class="h-2 w-full grid grid-cols-3 mt-8">
+            <div class="bg-colombiaYellow"></div>
+            <div class="bg-colombiaBlue"></div>
+            <div class="bg-colombiaRed"></div>
+        </div>
+    </footer>
+
+    <!-- Script de Interatividade -->
+    <script>
+        // Menu Mobile Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Expansão dos Cartões de Fontes
+        function toggleExpand(id) {
+            const content = document.getElementById(`content-${id}`);
+            const btn = document.getElementById(`btn-${id}`);
+            const isHidden = content.classList.contains('hidden');
+
+            if (isHidden) {
+                content.classList.remove('hidden');
+                btn.innerHTML = `<span>Ocultar detalhes</span> <i class="fa-solid fa-chevron-up text-xs"></i>`;
+                btn.classList.add('bg-blue-950', 'text-colombiaYellow', 'border', 'border-yellow-400');
+                btn.classList.remove('bg-colombiaYellow', 'text-colombiaBlue');
+            } else {
+                content.classList.add('hidden');
+                btn.innerHTML = `<span>Saiba mais</span> <i class="fa-solid fa-chevron-down text-xs"></i>`;
+                btn.classList.remove('bg-blue-950', 'text-colombiaYellow', 'border', 'border-yellow-400');
+                btn.classList.add('bg-colombiaYellow', 'text-colombiaBlue');
+            }
+        }
+
+        // Simulador "Descubra a fonte de energia"
+        const sourceData = {
+            agua: {
+                title: "Energia Hidrelétrica (Água)",
+                icon: "fa-water",
+                color: "text-colombiaYellow",
+                desc: "A água dos caudalosos rios colombianos é canalizada para mover turbinas gigantescas. É a principal fonte de eletricidade da Colômbia devido à vasta rede hidrográfica e ao relevo montanhoso da Cordilheira dos Andes."
+            },
+            sol: {
+                title: "Energia Solar (Sol)",
+                icon: "fa-sun",
+                color: "text-yellow-400",
+                desc: "Painéis fotovoltaicos captam a luz solar e a convertem diretamente em eletricidade. Regiões do norte colombiano, como La Guajira, possuem radiação solar privilegiada durante todo o ano, sendo ideais para essa tecnologia."
+            },
+            vento: {
+                title: "Energia Eólica (Vento)",
+                icon: "fa-wind",
+                color: "text-emerald-400",
+                desc: "Grandes torres com pás aerodinâmicas capturam a energia cinética dos ventos fortes. Na Colômbia, as planícies e penínsulas do norte oferecem ventos constantes que impulsionam os novos parques eólicos do país."
+            },
+            materia: {
+                title: "Matéria Orgânica (Biomassa)",
+                icon: "fa-seedling",
+                color: "text-rose-400",
+                desc: "Resíduos agrícolas — como o bagaço da cana-de-açúcar e restos da produção de óleo de palma — são reaproveitados para gerar energia térmica e elétrica em usinas de cogeração, promovendo a sustentabilidade agroindustrial."
+            }
+        };
+
+        function selectSource(key) {
+            ['agua', 'sol', 'vento', 'materia'].forEach(item => {
+                const b = document.getElementById(`src-btn-${item}`);
+                b.classList.remove('bg-colombiaYellow', 'text-colombiaBlue', 'ring-4', 'ring-white');
+                b.classList.add('bg-blue-950', 'text-white');
+            });
+
+            const activeBtn = document.getElementById(`src-btn-${key}`);
+            activeBtn.classList.remove('bg-blue-950', 'text-white');
+            activeBtn.classList.add('bg-colombiaYellow', 'text-colombiaBlue', 'ring-4', 'ring-white');
+
+            const data = sourceData[key];
+            const box = document.getElementById('source-display-box');
+            box.innerHTML = `
+                <div class="flex items-start gap-4">
+                    <div class="p-4 rounded-2xl bg-blue-900 ${data.color} text-3xl flex-shrink-0 shadow-lg border border-yellow-400/40">
+                        <i class="fa-solid ${data.icon}"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-extrabold text-colombiaYellow mb-2">${data.title}</h4>
+                        <p class="text-gray-100 text-sm sm:text-base leading-relaxed font-medium">${data.desc}</p>
+                    </div>
+                </div>
+            `;
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            selectSource('agua');
+            loadQuestion();
+        });
+
+        // Quiz Educativo Data
+        const quizQuestions = [
+            {
+                question: "Qual é a principal fonte de energia elétrica utilizada na matriz energética da Colômbia?",
+                options: [
+                    "Energia Nuclear",
+                    "Energia Hidrelétrica",
+                    "Carvão Mineral",
+                    "Energia Geotérmica"
+                ],
+                correct: 1,
+                explanation: "Correto! Cerca de 70% a 80% da eletricidade na Colômbia é gerada por hidrelétricas devido aos rios caudalosos e relevo andino."
+            },
+            {
+                question: "Qual departamento colombiano destaca-se enormemente pelo seu altíssimo potencial de energia solar e eólica?",
+                options: [
+                    "Antioquia",
+                    "Cundinamarca",
+                    "La Guajira",
+                    "Amazonas"
+                ],
+                correct: 2,
+                explanation: "Exato! La Guajira, no norte da Colômbia, possui ventos constantes e forte insolação, sendo o polo principal para energias renováveis não convencionais."
+            },
+            {
+                question: "O que são as FNCER no contexto do setor energético da Colômbia?",
+                options: [
+                    "Fontes Não Convencionais de Energia Renovável",
+                    "Fábricas Nacionais de Combustíveis e Energias Rápidas",
+                    "Fundo Nacional de Construção de Estradas e Redes",
+                    "Forças Navais de Combate e Energia Renovável"
+                ],
+                correct: 0,
+                explanation: "Correto! FNCER significa Fontes Não Convencionais de Energia Renovável (como solar, eólica, biomassa e pequena hidrelétrica)."
+            },
+            {
+                question: "Como a biomassa pode ser utilizada para gerar energia na agroindústria colombiana?",
+                options: [
+                    "Queimando carvão fóssil importado",
+                    "Utilizando resíduos agrícolas como bagaço de cana e óleo de palma",
+                    "Capturando energia das marés do Oceano Pacífico",
+                    "Através de turbinas eólicas submarinas"
+                ],
+                correct: 1,
+                explanation: "Perfeito! A biomassa aproveita resíduos orgânicos da agroindústria, como o bagaço de cana e restos de palma, para cogeração de energia."
+            },
+            {
+                question: "Por que é importante para a Colômbia diversificar sua matriz energética com solar e eólica?",
+                options: [
+                    "Para eliminar totalmente o uso de eletricidade nas cidades",
+                    "Para reduzir a dependência exclusiva das chuvas e aumentar a segurança energética",
+                    "Porque o petróleo colombiano acabou completamente",
+                    "Para exportar toda a energia gerada para os países vizinhos"
+                ],
+                correct: 1,
+                explanation: "Correto! Diversificar evita vulnerabilidades extremas durante secas prolongadas (como o fenômeno El Niño) e fortalece a segurança energética."
+            }
+        ];
+
+        let currentQuestionIndex = 0;
+        let score = 0;
+        let answered = false;
+
+        function loadQuestion() {
+            answered = false;
+            const q = quizQuestions[currentQuestionIndex];
+            document.getElementById('current-q').innerText = currentQuestionIndex + 1;
+            document.getElementById('question-text').innerText = q.question;
+            
+            const optionsContainer = document.getElementById('options-container');
+            optionsContainer.innerHTML = '';
+
+            q.options.forEach((option, index) => {
+                const btn = document.createElement('button');
+                btn.className = 'w-full text-left p-4 rounded-xl bg-blue-900/80 hover:bg-blue-800 border-2 border-yellow-400/30 transition text-sm sm:text-base font-semibold flex items-center justify-between text-white shadow-md';
+                btn.innerHTML = `<span>${option}</span> <i class="fa-regular fa-circle text-yellow-300"></i>`;
+                btn.onclick = () => selectOption(index);
+                optionsContainer.appendChild(btn);
+            });
+
+            document.getElementById('feedback-box').classList.add('hidden');
+            document.getElementById('next-btn').classList.add('hidden');
+        }
+
+        function selectOption(selectedIndex) {
+            if (answered) return;
+            answered = true;
+
+            const q = quizQuestions[currentQuestionIndex];
+            const optionsContainer = document.getElementById('options-container');
+            const buttons = optionsContainer.children;
+            const feedbackBox = document.getElementById('feedback-box');
+
+            for (let i = 0; i < buttons.length; i++) {
+                buttons[i].disabled = true;
+                if (i === q.correct) {
+                    buttons[i].classList.remove('bg-blue-900/80', 'hover:bg-blue-800');
+                    buttons[i].classList.add('bg-emerald-600', 'border-emerald-400', 'text-white');
+                    buttons[i].querySelector('i').className = 'fa-solid fa-circle-check text-white';
+                } else if (i === selectedIndex) {
+                    buttons[i].classList.remove('bg-blue-900/80', 'hover:bg-blue-800');
+                    buttons[i].classList.add('bg-red-600', 'border-red-400', 'text-white');
+                    buttons[i].querySelector('i').className = 'fa-solid fa-circle-xmark text-white';
+                }
+            }
+
+            if (selectedIndex === q.correct) {
+                score++;
+                feedbackBox.className = 'p-4 rounded-xl mb-6 text-sm sm:text-base font-bold bg-emerald-950 border-2 border-emerald-400 text-emerald-200 shadow-lg';
+                feedbackBox.innerHTML = `<i class="fa-solid fa-check-circle mr-2 text-emerald-400"></i> Resposta Correta! ${q.explanation}`;
+            } else {
+                feedbackBox.className = 'p-4 rounded-xl mb-6 text-sm sm:text-base font-bold bg-red-950 border-2 border-red-400 text-red-200 shadow-lg';
+                feedbackBox.innerHTML = `<i class="fa-solid fa-triangle-exclamation mr-2 text-red-400"></i> Resposta Incorreta. ${q.explanation}`;
+            }
+
+            feedbackBox.classList.remove('hidden');
+            document.getElementById('next-btn').classList.remove('hidden');
+        }
+
+        function nextQuestion() {
+            currentQuestionIndex++;
+            if (currentQuestionIndex < quizQuestions.length) {
+                loadQuestion();
+            } else {
+                showResults();
+            }
+        }
+
+        function showResults() {
+            document.getElementById('quiz-container').classList.add('hidden');
+            document.getElementById('quiz-progress').classList.add('hidden');
+            const resultsDiv = document.getElementById('quiz-results');
+            resultsDiv.classList.remove('hidden');
+
+            const scoreText = document.getElementById('score-text');
+            let message = "";
+            if (score === 5) {
+                message = `Excelente! Você acertou todas as ${score} perguntas e é um verdadeiro especialista em energias renováveis na Colômbia! 🌟`;
+            } else if (score >= 3) {
+                message = `Muito bem! Você acertou ${score} de 5 perguntas. Demonstrou ótimo conhecimento sobre a sustentabilidade colombiana! 👏`;
+            } else {
+                message = `Você acertou ${score} de 5 perguntas. Continue explorando nosso site para aprender ainda mais sobre as energias limpas da Colômbia! 🌱`;
+            }
+            scoreText.innerText = message;
+        }
+
+        function restartQuiz() {
+            currentQuestionIndex = 0;
+            score = 0;
+            document.getElementById('quiz-results').classList.add('hidden');
+            document.getElementById('quiz-container').classList.remove('hidden');
+            document.getElementById('quiz-progress').classList.remove('hidden');
+            loadQuestion();
+        }
+    </script>
+</body>
+</html>
